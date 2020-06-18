@@ -4,7 +4,7 @@ alert('insira seu cartão');
 
 alert('Seu saldo disponivel é' + saldoDisponivel + 'R$');
 
-let valorSaque = window.prompt('Quanto deseja sacar');
+let valorSaque = Number(window.prompt('Quanto deseja sacar'));
 
 if(valorSaque <= saldoDisponivel) {
     saldoDisponivel = saldoDisponivel - valorSaque;
